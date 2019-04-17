@@ -1,0 +1,13 @@
+* text=auto
+
+*.java          text
+*.kt            text
+*.properties    text
+*.sh            text
+*.txt           text
+*.yml           text
+
+*.class         binary
+*.dll           binary
+*.jar           binary
+*.so            binary
