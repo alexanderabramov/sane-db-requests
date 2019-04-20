@@ -1,5 +1,6 @@
 package org.test.sanedb
 
+import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.GetMapping
@@ -11,7 +12,7 @@ class JpaHibernateController(
         val repository: ARepository
 ) {
     @GetMapping("/as")
-    fun list(pageable: Pageable): List<A> {
-        return repository.list(pageable)
+    fun list(pageable: Pageable): Page<A> {
+        return repository.findAll(pageable)
     }
 }

@@ -1,8 +1,5 @@
 package org.test.sanedb
 
-import org.springframework.data.domain.Pageable
-import org.springframework.data.repository.CrudRepository
+import org.springframework.data.repository.PagingAndSortingRepository
 
-interface ARepository : CrudRepository<A, Int> {
-    fun list(pageable: Pageable): List<A>
-}
+interface ARepository : PagingAndSortingRepository<A, Int>
