@@ -1,5 +1,9 @@
+logging.level:
+  org.test.sanedb: DEBUG
+  org.springframework.jdbc.core: DEBUG
+
 spring:
-  application.name: kafka-triage
+  application.name: sane-db-requests
   data.web:
     pageable:
       default-page-size: 10
